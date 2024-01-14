@@ -1,0 +1,357 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("fonts/RobotoSlab-Regular.ttf") format("truetype");
+}
+p {
+  font-size: 1.25rem;
+  font-family: "Roboto Slab";
+}
+figcaption {
+  font-size: 1.25rem;
+  font-family: "Roboto Slab";
+}
+h1 {
+  font-size: 2.25rem;
+  font-family: "Roboto";
+  padding-top: 2rem;
+}
+h2 {
+  font-size: 2rem;
+  font-family: "Roboto Slab";
+  padding-top: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+  font-family: "Roboto Slab";
+}
+h4 {
+  font-size: 1.75rem;
+  font-family: "Roboto";
+}
+
+/* Används i åtgärder delen på underrubriker */
+h5 {
+  font-size: 50px;
+  color: black, bold;
+}
+.smallItalic {
+  font-size: 1rem;
+  font-style: italic;
+  text-align: left;
+}
+
+/* Logotypen */
+.logo {
+  background-image: url(./img/logo.png);
+  width: 300px;
+  height: 70px;
+  margin: 15px 0 15px 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Bilden i header */
+.headerImg {
+  background-image: url("./img/headerimg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.headerImg p {
+  width: 600px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  margin-right: 20px;
+}
+
+/* Huvudinnehållet visas i en kolumn och objekt centreras. */
+#mainContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling för textinnehållet som bestämmer bredd, font och marginal. Texten justeras till vänster. */
+.textContent {
+  width: 768px;
+  font-family: "Roboto Slab";
+  text-align: left;
+  margin-top: 2rem;
+}
+
+/* Styling för välkomsttexten som bestämmer max-bredd och marginal. Texten justeras till vänster. */
+.topContent {
+  max-width: 768px;
+  margin: 5rem 0 5rem 0;
+  text-align: left;
+}
+
+/* Styling för varje sektions titel. Padding, bakgrundsfärg, bredd, font och marginal bestäms här- */
+.titleBar {
+  padding: 3rem 0 3rem 0;
+  background-color: #fbfbfb;
+  width: 100%;
+  font-size: 36px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 5rem;
+}
+
+/* Styling för diagram, som bestämmer dess marginaler. */
+.chartContainer {
+  margin: 4rem 0 4rem 0;
+}
+
+/* Styling för faktaruta som bestämmer bredd, topp-marginal, padding, bakgrundsfärg och att den är flex, samt innehållet justeras centralt. */
+.greenInfoBox {
+  width: 100%;
+  margin-top: 4rem;
+  padding: 4rem 0 4rem 0;
+  background-color: rgba(81, 144, 13, 0.13);
+  display: flex;
+  justify-content: center;
+}
+.greenInfoBox {
+  font-size: 18px;
+  font-family: "Roboto Slab";
+}
+
+ /*Används i åtgärder sektionen för att bestämma de gröna rutorna*/
+.greenInfoBox2 {
+  margin-top: -5rem;
+  width: 100%;
+  padding: 4rem 0 4rem 0;
+  background-color: rgba(81, 144, 13, 0.13);
+  display: flex;
+  justify-content: center;
+}
+
+ /*Används i åtgärder sektionen för att bestämma de vita rutorna */
+.atgarderContainer {
+  border: 7px solid #fbfbfb;
+}
+
+/* Ikonen som finns i glaciärer faktarutan */
+.glacierIcon {
+  background-image: url("./img/isbjorn3.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 15vw;
+}
+
+/* Ikonen som finns i fossila bränslen faktarutan */
+.industrySilhouette {
+  background-image: url("./img/pollution.png");
+  background-size: 18vw;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+/* Styling som bestämmer faktarutans inre, dess bredd och att text justeras till vänster. */
+.greenInfoBoxInner {
+  width: 768px;
+  text-align: left;
+}
+
+/* Bilden används i sektionen "Fossila bränslen" */
+.fossileFuelsHeader {
+  background-image: url("./img/fossilefuelsheader.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* Bilden används i sektionen "Globala temperaturer" */
+.globalTemperaturesHeader {
+  background-image: url("./img/globalatemperaturer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* Bilden som används i glaciärer sektionens header med attribut som bestämmer om bilden uppreppas, hur bilden placeras, hur stor den är och hur den visas  */
+.glaciarerHeader {
+  background-image: url("./img/glaciarer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* Bilden som används i sjönivåer sektionens header, med attribut som bestämmer om bilden uppreppas, hur bilden placeras, hur stor den är och hur den visas */
+.SjonivaerHeader {
+  background-image: url("https://images.unsplash.com/photo-1564302138853-535ae0b8ee06?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* Används i påverkan delen, för at att bestämma bildens och rutans position, storlek, färg osv */
+.paverkanHeader {
+  background-image: url("./img/paverkan.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* Används i åtgärder delen, för at att bestämma bildens och rutans position, storlek, färg osv */
+.atgarderHeader {
+  background-image: url("https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 4rem;
+}
+.textAndImageContainer {
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+.textAndImageContainer img {
+  width: 40%;
+  margin-left: 3rem;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Checkboxes */
+.buttonCheckbox {
+  display: none; /* Hide the actual checkbox */
+}
+
+.button-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px 0 5px;
+}
+.buttonCheckbox:checked + .button-label {
+  background-color: #2c3e50; /* Updated color for checked state */
+}
+
+/* Används i åtgärder delen, skapar en grå box och bestämmer innehållets placering */
+.greyBox {
+  text-align: left;
+  padding: 4rem 1rem 4rem 1rem;
+  background-color: #fbfbfb;
+}
+
+/* Används i åtgärder delen, skapar en grön box bestämmer innehållets placering */
+.greenBox {
+  text-align: left;
+  padding: 4rem 1rem 4rem 1rem;
+}
+.greyBox ul, .greenBox ul {
+  font-size: 1.25rem;
+}
+
+/* Används i åtgärder delen, bestämmer innehållets och boxarnas position, storlek och hur de ska visas */
+.greyBox,
+.greenBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 2rem;
+  max-width: 768px;
+}
+.greyBox img,
+.greenBox img {
+  width: 200px;
+}
+
+/* Flyttar skrivaren till höger används i åtgärder delen */
+.skrivare {
+  float: right;
+}
+.footer {
+  margin: 30px 0;
+}
+
+/* Navigation styling */
+Nav {
+  border-bottom: thin solid black;
+}
+Nav a.nav-link {
+  color: #000;
+  font-size: 20px;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+Nav a.nav-link:hover {
+  color: #51900d; 
+}
+
+/* Styling för diagram */
+.recharts-legend-item-text {
+  font-size: 18px;
+}
+.recharts-surface {
+  width: 18px;
+  height: 18px;
+}
+
+
+.fullSizeImg {
+  width: 100%;
+  margin-top: 2rem;
+}
