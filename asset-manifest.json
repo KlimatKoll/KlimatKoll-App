@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/KlimatKoll-App/static/css/main.5625c026.css",
-    "main.js": "/KlimatKoll-App/static/js/main.6ee05b4e.js",
+    "main.js": "/KlimatKoll-App/static/js/main.9f4a7033.js",
     "static/js/787.8e8ffda9.chunk.js": "/KlimatKoll-App/static/js/787.8e8ffda9.chunk.js",
     "static/media/headerimg.png": "/KlimatKoll-App/static/media/headerimg.a4728a328adba28731d0.png",
     "static/media/globalatemperaturer.jpg": "/KlimatKoll-App/static/media/globalatemperaturer.27b62006cfce0bbd3a5c.jpg",
@@ -25,11 +25,11 @@
     "static/media/logo.svg": "/KlimatKoll-App/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/KlimatKoll-App/index.html",
     "main.5625c026.css.map": "/KlimatKoll-App/static/css/main.5625c026.css.map",
-    "main.6ee05b4e.js.map": "/KlimatKoll-App/static/js/main.6ee05b4e.js.map",
+    "main.9f4a7033.js.map": "/KlimatKoll-App/static/js/main.9f4a7033.js.map",
     "787.8e8ffda9.chunk.js.map": "/KlimatKoll-App/static/js/787.8e8ffda9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5625c026.css",
-    "static/js/main.6ee05b4e.js"
+    "static/js/main.9f4a7033.js"
   ]
 }
