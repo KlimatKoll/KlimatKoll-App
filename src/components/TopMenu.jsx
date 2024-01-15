@@ -16,7 +16,7 @@ const TopMenu = () => {
   
   /* Renderar en navigationsmeny, som möjliggör scrollning till en sektion vid klick på en av menyns objekt */
     return (
-        <Navbar bg="white" data-bs-theme="light" sticky="top" className="w-100 justify-content-center">
+        <Navbar bg="white" data-bs-theme="light" sticky="top" className="w-100 justify-content-center navbar-expand-lg">
           <div class="logo"></div> {/* Logotypen renderas */}
         <Container>
           <Nav className="me-auto w-100 justify-content-center">
