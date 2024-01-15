@@ -1,8 +1,141 @@
+
+
+
 .App {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Media query för medium skärmar (surfplattor) */
+@media only screen and (max-width: 1024px) {
+  .headerImg p {
+    width: 100%;
+    font-size: 24px;
+    margin-right: 0;
+  }
+
+  .topContent {
+    margin: 2rem 0;
+  }
+
+  .textContent {
+    width: 100%;
+  }
+
+  .titleBar {
+    font-size: 28px;
+    margin-bottom: 3rem;
+  }
+
+  .chartContainer {
+    margin: 2rem 0;
+  }
+
+  .greenInfoBox,
+  .greenInfoBox2 {
+    font-size: 16px;
+    padding: 3rem 0;
+  }
+
+  .greenBox img {
+    width: 150px;
+  }
+
+  .atgarderContainer {
+    border-width: 5px;
+  }
+
+  Nav {
+    padding: 10px;
+  }
+
+  Nav a.nav-link {
+    font-size: 18px;
+    margin: 0.5rem 0;
+  }
+
+  .recharts-surface {
+    width: 16px;
+    height: 16px;
+  }
+
+  .recharts-legend-item-text {
+    font-size: 16px;
+  }
+
+  .footer {
+    margin: 20px 0;
+  }
+}
+
+/* Media query för små skärmar (mobil) */
+@media only screen and (max-width: 768px) {
+  .headerImg {
+    height: 300px;
+  }
+
+  .headerImg p {
+    width: 100%;
+    font-size: 16px;
+    margin-right: 0;
+  }
+
+  .topContent {
+    margin: 1rem 0;
+  }
+
+  .textContent {
+    width: 100%;
+  }
+
+  .titleBar {
+    font-size: 24px;
+    margin-bottom: 2rem;
+  }
+
+  .chartContainer {
+    margin: 1rem 0;
+  }
+
+  .greenInfoBox,
+  .greenInfoBox2 {
+    font-size: 
+14px;
+    padding: 2rem 0;
+  }
+
+  .greenBox img {
+    width: 100px;
+  }
+
+  .atgarderContainer {
+    border-width: 3px;
+  }
+
+  Nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  Nav a.nav-link {
+    font-size: 16px;
+    margin: 0.5rem 0;
+  }
+
+  .recharts-surface {
+    width: 14px;
+    height: 14px;
+  }
+
+  .recharts-legend-item-text {
+    font-size: 14px;
+  }
+
+  .footer {
+    margin: 15px 0;
+  }
 }
 
 /* Fonts */
