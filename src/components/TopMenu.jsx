@@ -16,9 +16,11 @@ const TopMenu = () => {
   
   /* Renderar en navigationsmeny, som möjliggör scrollning till en sektion vid klick på en av menyns objekt */
     return (
-        <Navbar expand-lg bg="white" data-bs-theme="light" sticky="top" className="w-100 justify-content-center">
+        <Navbar expand="lg" bg="white" data-bs-theme="light" sticky="top" className="w-100 justify-content-center">
           <div class="logo"></div> {/* Logotypen renderas */}
-        <Container>
+        <Container fluid>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto w-100 justify-content-center">
             <Nav.Link onClick={() => scrollToSection('fossileFuelsHeader')}>Koldioxidnivåer</Nav.Link>
             <Nav.Link onClick={() => scrollToSection('globalTemperaturesHeader')}>Globala temperaturer</Nav.Link>
@@ -27,6 +29,7 @@ const TopMenu = () => {
             <Nav.Link onClick={() => scrollToSection('paverkanHeader')}>Hur det påverkar äldre</Nav.Link>
             <Nav.Link onClick={() => scrollToSection('atgarderHeader')}>Åtgärder</Nav.Link>
           </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
 
